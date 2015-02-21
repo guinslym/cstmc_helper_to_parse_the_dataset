@@ -1,0 +1,123 @@
+-> % python artefact.py
+	---Dataset 1/30--
+Downloading : vacuum-tubes-tubes-electronique.xml
+100% [....................................................] 10438921 / 10438921---Parsing this dataset...
+2144/4328
+	---Dataset 2/30--
+Downloading : space-technology-technologie-de-lespace.xml
+100% [......................................................] 4215163 / 4215163---Parsing this dataset...
+656/1406
+	---Dataset 3/30--
+Downloading : railway-transportation-transports-ferroviaires.xml
+100% [....................................................] 24011118 / 24011118---Parsing this dataset...
+2062/5781
+	---Dataset 4/30--
+Downloading : printing-imprimerie.xml
+100% [....................................................] 45668265 / 45668265---Parsing this dataset...
+3584/9932
+	---Dataset 5/30--
+Downloading : physics-physique.xml
+100% [....................................................] 14680317 / 14680317---Parsing this dataset...
+1849/4792
+	---Dataset 6/30--
+Downloading : photography-photographie.xml
+100% [....................................................] 26658634 / 26658634---Parsing this dataset...
+4464/9758
+	---Dataset 7/30--
+Downloading : non-motorized-ground-transportation-transports-terrestres-non-motorises.xml
+100% [....................................................] 18335011 / 18335011---Parsing this dataset...
+2961/6725
+	---Dataset 8/30--
+Downloading : motorized-ground-transportation-transports-terrestres-motorises.xml
+100% [....................................................] 18335035 / 18335035---Parsing this dataset...
+2961/6725
+	---Dataset 9/30--
+Downloading : mining-and-metallurgy-mines-et-metallurgie.xml
+100% [..........................................................................] 2389444 / 2389444	---Parsing this dataset...
+240/621
+	---Dataset 10/30--
+Downloading : metrology-metrologie.xml
+100% [..........................................................................] 4805076 / 4805076	---Parsing this dataset...
+712/1641
+	---Dataset 11/30--
+Downloading : medical-technology-technologie-medicale.xml
+100% [........................................................................] 22695796 / 22695796	---Parsing this dataset...
+3321/7392
+	---Dataset 12/30--
+Downloading : meteorology-meteorologie.xml
+100% [..........................................................................] 7763661 / 7763661	---Parsing this dataset...
+980/2223
+	---Dataset 13/30--
+Downloading : mathematics-mathematiques.xml
+100% [..........................................................................] 4456377 / 4456377	---Parsing this dataset...
+695/1546
+	---Dataset 14/30--
+Downloading : marine-transportation-transports-maritimes.xml
+100% [..........................................................................] 7316430 / 7316430	---Parsing this dataset...
+1042/2475
+	---Dataset 15/30--
+Downloading : lighting-technology-technologie-declairage.xml
+100% [..........................................................................] 9671503 / 9671503	---Parsing this dataset...
+1692/3495
+	---Dataset 16/30--
+Downloading : industrial-technology-technologie-industrielle.xml
+100% [........................................................................] 29312836 / 29312836	---Parsing this dataset...
+4320/9750
+	---Dataset 17/30--
+Downloading : horology-horlogorie.xml
+100% [..........................................................................] 2123738 / 2123738	---Parsing this dataset...
+370/763
+	---Dataset 18/30--
+Downloading : forestry-exploitation-forestiere.xml
+100% [..........................................................................] 7067360 / 7067360	---Parsing this dataset...
+1239/2593
+	---Dataset 19/30--
+Downloading : fire-fighting-lutte-contre-les-incendies.xml
+100% [..........................................................................] 1773136 / 1773136	---Parsing this dataset...
+270/575
+	---Dataset 20/30--
+Downloading : fisheries-service-des-peches.xml
+100% [............................................................................] 145682 / 145682	---Parsing this dataset...
+28/56
+	---Dataset 21/30--
+Downloading : exploration-and-survey-exploration-et-leve.xml
+100% [..........................................................................] 7975111 / 7975111	---Parsing this dataset...
+1163/2598
+	---Dataset 22/30--
+Downloading : energy-electric-energie-electrique.xml
+100% [........................................................................] 14092682 / 14092682	---Parsing this dataset...
+2409/4946
+	---Dataset 23/30--
+Downloading : domestic-technology-technologie-domestique.xml
+100% [........................................................................] 17084766 / 17084766	---Parsing this dataset...
+2599/5614
+	---Dataset 24/30--
+Downloading : computing-technology-technologie-informatique.xml
+100% [........................................................................] 10076627 / 10076627	---Parsing this dataset...
+1231/3098
+	---Dataset 25/30--
+Downloading : communications-communications.xml
+100% [........................................................................] 37599823 / 37599823	---Parsing this dataset...
+6550/13652
+	---Dataset 26/30--
+Downloading : chemistry-chimie.xml
+100% [..........................................................................] 5323089 / 5323089	---Parsing this dataset...
+903/1955
+	---Dataset 27/30--
+Downloading : bookbinding-reliure.xml
+100% [..........................................................................] 1757685 / 1757685	---Parsing this dataset...
+279/619
+	---Dataset 28/30--
+Downloading : aviation-aviation.xml
+100% [........................................................................] 53681224 / 53681224	---Parsing this dataset...
+9528/21821
+	---Dataset 29/30--
+Downloading : astronomy-astronomie.xml
+100% [..........................................................................] 3826395 / 3826395	---Parsing this dataset...
+364/1080
+	---Dataset 30/30--
+Downloading : agriculture-agriculture.xml
+100% [........................................................................] 31003529 / 31003529	---Parsing this dataset...
+4230/9602
+Time took to download
+all the dataset => 1815 days, 2:33:51.935120
