@@ -28,6 +28,7 @@ Workflow:
 
 Notes: 
     To download the 29 datasets and parse them takes about 26 min.
+
 """
 import wget
 import urllib
@@ -36,7 +37,6 @@ from lxml import etree
 from bs4 import BeautifulSoup
 import io
 import json
-from xmlutils.xml2json import xml2json
 from pprint import pprint
 import time#benchmark
 import datetime
@@ -107,15 +107,6 @@ def simplify_this_dataset(dataset):
     except ValueError:
         print("use python2 instead for this function")
     return new_file_name
-
-def xml_to_json(dataset_name):
-    """Convert the xml file into a JSON document"""
-    module_path = os.path.dirname(os.path.abspath(__file__))
-    dataset_name_json = dataset_name+ ".json"
-    converter = xml2json(module_path+"/"+dataset_name, module_path+ "/" + dataset_name_json, encoding='utf-8')
-    #print(dataset_name_json)
-    converter.convert()
-    return dataset_name_json
 
 def i18n_this_string(string_value):
     """ This function will return a json object that has
@@ -351,11 +342,31 @@ def write_a_json_file_for_the_database(artefact, dataset_name):
     with io.open("rails_"+dataset_name+'.json', 'w', encoding='utf-8') as f:
         f.write(unicode(json.dumps(artefact, ensure_ascii=True, indent=4 )))
 
+def cleaning_this_directory():
+    """After downloading all the XML dataset
+    and after parsing the xml file to be able to create a
+    json file. This FUNCTION will move all the .xml and .json
+    to the directory ./json or ./xml
+    """
+    import os, shutil
+    files = os.listdir(".")
+    for f in files:
+        if os.path.isfile(f):
+            extension = f.split(".")[-1]
+            if extension == 'json':
+                #move the file
+                os.rename(f, "json/"+f)
+            elif extension == 'xml':
+                #move to xml file
+                os.rename(f, 'xml/'+f)
+            else:
+                pass
+
 def main():
     number_of_dataset_to_download = len(artefacts_dataset)
     for dataset_name in artefacts_dataset:
         print("\t---Dataset {0}/{1}--".format((artefacts_dataset.index(dataset_name)+1), number_of_dataset_to_download))
-        #wget_this_dataset(dataset_name)
+        wget_this_dataset(dataset_name)
         print("\t---Parsing this dataset...")
         artefacts = xml_clean_the_dataset_for_rails(dataset_name)
         write_a_json_file_for_the_database(artefacts, dataset_name)
@@ -363,7 +374,8 @@ def main():
 if __name__ == "__main__":
     start_time = time.time()
     main()
+    cleaning_this_directory()
     seconds = (time.time() - start_time)
-    time_in_total = str(datetime.timedelta(seconds))
+    time_in_total = str(datetime.timedelta(seconds=seconds))
     print("Time took to download\nall the dataset => {0}".format(time_in_total))
 
