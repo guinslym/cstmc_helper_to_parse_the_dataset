@@ -42,7 +42,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'okzoom_rails'
-gem 'mechanize', '2.6.0'
 gem 'prawn'
 gem 'faker'
 gem 'puma' #heroku
