@@ -1,6 +1,6 @@
 ##CSTMC Helper
 
-These are the files that I use to help me parse the CSMTC datasets
+Theses are the files that I use to help me parse the CSMTC datasets
 
 #Usage
 
