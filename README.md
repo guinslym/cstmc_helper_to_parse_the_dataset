@@ -22,6 +22,10 @@ This stylesheet will transform any XML file into a simplier version.
 	import artefact.py as art
 	art.simplify_this_dataset(any_dataset.xml_file)
 
+####parsing.py
+A loosing time script.... :) I wanted to download all the images from the CSMTC server that are related with the open dataset. Because on my DB I have a column Height and width so In order to know the dimension of the photo I needed to download the images. This file will create 5 thread to download all the pictures... (66000 pics) it took me 15 hours.... And I didn't use the picture... don'T have time for time. So on my db the size field are empty.
+
+
 ####Seed.rb
 A ruby file this was a prototype to cut and paste into the seeds.rb (Rails app)
 
