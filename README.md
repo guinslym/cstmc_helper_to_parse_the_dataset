@@ -10,6 +10,7 @@ These are the files that I use to help me parse the CSMTC datasets
 
 ####artefact.py
 Artefact.py will download all the xml file, than it will parse it to create a .json file.
+
 	Dependency:
 	pip install wget
 	pip install bs4
@@ -17,6 +18,7 @@ Artefact.py will download all the xml file, than it will parse it to create a .j
 
 ####ex-fire.xslt
 This stylesheet will transform any XML file into a simplier version.
+
 	import artefact.py as art
 	art.simplify_this_dataset(any_dataset.xml_file)
 
