@@ -15,10 +15,9 @@
 /log/*.log
 /tmp
 
-*.xml
-*.json
 
 /totrash
+/images
 
 *essaie.rb
 *.jpg
@@ -26,8 +25,6 @@
 /app/assets/images/rb/*
 *rb/
 data.json
-*.xml
-*.py
 *.pdf
 *.mp4
 *.mp3

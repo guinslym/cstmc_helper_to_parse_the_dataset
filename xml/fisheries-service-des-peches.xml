@@ -1,0 +1,3773 @@
+<!DOCTYPE table [
+<!ELEMENT table (tuple)*>
+<!ATTLIST table name CDATA #REQUIRED>
+<!ELEMENT tuple (table | tuple | atom)*>
+<!ATTLIST tuple name CDATA #IMPLIED>
+<!ELEMENT atom (#PCDATA)*>
+<!ATTLIST atom name CDATA #REQUIRED>
+<!ATTLIST atom type CDATA "text">
+<!ATTLIST atom size CDATA "short">
+]>
+<?schema table           ecatalogue
+    text short      ObjObjectDiscipline
+    text short      ObjCatalogueNumber
+    text long       ObjObjectName
+    text long       ObjObjectType
+    table           ObjModel_tab
+      text long       ObjModel
+    end
+    text short      ObjSerialNumber
+    text long       ObjObjectAKA
+    text long       ObjModelUserName
+    text short      ObjPartNo
+    integer         ObjPartNoSum
+    table           ArtLexRank_tab
+      integer         ArtLexRank
+    end
+    table           ArtLexGroup_tab
+      text short      ArtLexGroup
+    end
+    table           ArtLexCategory_tab
+      text short      ArtLexCategory
+    end
+    table           ArtLexSubCategory_tab
+      text short      ArtLexSubCategory
+    end
+    text short      ObjManufactureDate
+    integer         ObjManufactureDateFrom
+    integer         ObjManufactureDateTo
+    tuple           ObjManufacturerRef
+      text short      NamOrganisation
+      text short      NamOrganisationAcronym
+      text short      AddPhysCity
+      text short      AddPhysCountry
+      text short      AddPhysState
+    end
+    tuple           ObjDistributorRef
+      text short      NamOrganisation
+      text short      NamOrganisationAcronym
+      text short      AddPhysCity
+      text short      AddPhysCountry
+      text short      AddPhysState
+      text long       AddPhysStreet
+    end
+    text long       ArtConCanada
+    text long       ArtConFunction
+    text long       ArtConTechnical
+    text long       ArtConPeriod
+    text long       ArtConCountry
+    text long       ArtConProvinceState
+    text long       ArtConAreaNotes
+    table           ArtCompWandDMeasurement_tab
+      text short      ArtCompWandDMeasurement
+    end
+    table           MulMultiMediaRef_tab
+      table           DocIdentifier_tab
+        text short      DocIdentifier
+      end
+    end
+    text long       ArtDetMissing
+    text long       ArtDetFinish
+    text long       ArtDetDecoration
+    text long       CstmcNotWeb
+    text long       CstmcNotExhibit
+    text long       NotNotes
+    text short      ArtRefWorksheet
+    text short      ArtRefCollection
+    text short      ArtRefManual
+    table           ArtRefPatents_tab
+      text long       ArtRefPatents
+    end
+    text short      ArtRefSuppInfo
+    text short      ArtRefOversized
+    text short      ArtRefManual
+    text short      ArtRefStillImages
+    text short      ArtRefNumberRange
+    text short      ArtRefArticleNumber
+    text short      ArtRefMultimedia
+    text short      ArtRefExternalDoc
+    table           ArtRefImage_tab
+      text short      ArtRefImage
+    end
+    table           ArtRefReferences_tab
+      text long       ArtRefReferences
+    end
+    tuple           LocCurrentLocationRef
+      text short      LocLevel1
+    end
+    text short      LocIndependentlyMoveable
+    date            AssAssessmentDate
+    text short      AssConditionReport
+    text long       AssOilCoolantEtc
+    text long       AssActionRequired
+    text long       AssActionTaken
+    text short      AssOperable
+    text short      AssRestored
+    text long       AssHazards
+    table           ArtCompWandDValue_tab
+      text long       ArtCompWandDValue
+    end
+    table           ArtCompWandDUnit_tab
+      text short      ArtCompWandDUnit
+    end
+    text long       ArtCompGeneralDescription
+    table           ArtCompMaterialCHINGeneral_tab
+      text long       ArtCompMaterialCHINGeneral
+    end
+    table           ArtCompMaterialCHINSpecific_tab
+      text long       ArtCompMaterialCHINSpecific
+    end
+    text short      ConConditionStatus
+    date            ConDateChecked
+    text long       ConConditionDetails
+    text long       ConHandlingInstructions
+    text short      CstmcAdmAcquisitionProposal
+    table           InfStatus_tab
+      text short      InfStatus
+    end
+    table           InfComments0
+      text long       InfComments
+    end
+    table           InfInspectionDate0
+      date            InfInspectionDate
+    end
+    table           StaStable_tab
+      text short      StaStable
+    end
+    table           StaInspectionDate0
+      date            StaInspectionDate
+    end
+    table           StaComments0
+      text long       StaComments
+    end
+    text short      SrcCulturalProperty
+    text short      SrcLotAcquisition
+    text long       SrcOtherNos
+    text short      SrcPreviousCstmcNos
+  end
+?>
+<!-- Data -->
+<table name="ecatalogue">
+  <!-- Row 1 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1988.0188</atom>
+    <atom name="ObjObjectName">Box, salmon;:;Bo&#238;te &#224; saumon</atom>
+    <atom name="ObjObjectType">PRODUCT/SHIPPING</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">REPRESENTATIVE OF PACKAGING USED FOR THE SHIPMENTOF ICE PACKED FISH.</atom>
+    <atom name="ArtConFunction">CONTAINER USED TO SHIP FISH, SPECIFICALLY GASPE SALMON</atom>
+    <atom name="ArtConCountry">North America</atom>
+    <atom name="ArtConAreaNotes">Eastern North America</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1988.0188.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1988.0188.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">COVER</atom>
+    <atom name="ArtDetFinish">UNFINISHED</atom>
+    <atom name="NotNotes">SHIPPING BOX FOR SALMON FROM COOPERATIVE DE PECHEURS DE CARLETON, CARLETON SUR MER, COMPTE BONAVENTURE, GASPE, P.Q.</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">880188-880189</atom>
+    <atom name="ArtRefArticleNumber">6406-171</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">Museum Documents in Supp. Info.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2380</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">114.2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">027.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">023.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">WOOD</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 2 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1979.0870</atom>
+    <atom name="ObjObjectName">Net;:;Filet</atom>
+    <atom name="ObjObjectType">DIP NET W. DETACHABLE HANDLE</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1979.0870.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1979.0870.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">COMPLETE</atom>
+    <atom name="ArtDetFinish">FRAME PAINTED BLACK/ NETTING BLACK/ METAL FERRULE &amp; TIP NICKEL PLATED</atom>
+    <atom name="NotNotes">C/W A CLOTH BAG</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefNumberRange">1979.0748-.0871; 1979.0949-.0952</atom>
+    <atom name="ArtRefArticleNumber">6409-43</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1) COPY OF COLLECTION INVENTORY (790748 S.I.)</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">113.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">029.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL FRAME/ COTTON NETTING/ BAMBOO HANDLE WITH METAL FERRULE &amp; TIP/ CLOTH BAG</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">cotton;:;coton</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">bamboo;:;bambou</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 3 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1979.0573</atom>
+    <atom name="ObjObjectName">Press, embossing;:;Presse &#224; gaufrer</atom>
+    <atom name="ObjObjectType">HAND OPERATED</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Printing;:;Imprimerie</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Image transfer;:;Transfert de l'image</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Embossing;:;Bosselage</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConProvinceState">Newfoundland &amp; Labrador</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1979.0573.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1979.0573.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">APPEARS COMPLETE
+From CA of 03/21/1995 by Tony Missio: Undetermined</atom>
+    <atom name="ArtDetFinish">PAINTED WITH BLACK ENAMEL</atom>
+    <atom name="ArtDetDecoration">NONE</atom>
+    <atom name="NotNotes">ACCORDING TO DONOR PRESS WAS USED TO EMBOSS SARDINE CANS WITH A CODE NUMBER</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1979.0573-1979.0574</atom>
+    <atom name="ArtRefArticleNumber">6381-75</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">Museum Documents in Supp. Info.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssAssessmentDate">1995-03-21</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssActionRequired">Clean; treat corrosion; consolidate loose paint.</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <atom name="AssHazards">No</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">021.3</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">009.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">025.3</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">IRON OR STEEL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="InfStatus_tab">
+      <tuple>
+        <atom name="InfStatus">No;:;Non</atom>
+      </tuple>
+    </table>
+    <table name="InfInspectionDate0">
+      <tuple>
+        <atom name="InfInspectionDate">1995-03-21</atom>
+      </tuple>
+    </table>
+    <table name="StaStable_tab">
+      <tuple>
+        <atom name="StaStable">No;:;Non</atom>
+      </tuple>
+    </table>
+    <table name="StaInspectionDate0">
+      <tuple>
+        <atom name="StaInspectionDate">1995-03-21</atom>
+      </tuple>
+    </table>
+    <table name="StaComments0">
+      <tuple>
+        <atom name="StaComments">Stable Comments:  Corrosion may be active; paint loss may continue. :: Deterioration Notes:  50-60% paint loss; much of remaining paint cracked &amp; flaking. Crusty bright orange ferrous corrosion on exposed metal. Dirty accretion.</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 4 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1985.0287</atom>
+    <atom name="ObjObjectName">Rod, fishing;:;Canne &#224; p&#234;che</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConProvinceState">Ontario</atom>
+    <atom name="ArtConAreaNotes">BALACLAVA MILL, NEAR RENFREW, ONTARIO</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1985.0287.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1985.0287.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">
+
+From CA of 07/22/1997 by Gordon Perrault: No - Complete</atom>
+    <atom name="ArtDetFinish">BLACK CORD/ RED, WHITE &amp; GREEN FLOAT</atom>
+    <atom name="NotNotes">CW. COLLECTION PTS/ CONDITION: UNUSED, SLIGTHLY SOILED</atom>
+    <atom name="ArtRefCollection">BALACLAVA</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1985.0215-.0351; 1985.0443-.0445; SP0534; SP0536; SP0573; SP1003</atom>
+    <atom name="ArtRefArticleNumber">6396-77</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">SEE 850215 S.I.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2380</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssAssessmentDate">1997-07-22</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOilCoolantEtc">none</atom>
+    <atom name="AssActionRequired">none</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <atom name="AssHazards">No</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">420.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">007.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">005.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">BAMBOO POLE/ SYNTHETIC CORD/ PLASTIC FLOAT</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">synthetic;:;synth&#233;tique</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">bamboo;:;bambou</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">plastic;:;plastique</atom>
+      </tuple>
+    </table>
+    <table name="InfStatus_tab">
+      <tuple>
+        <atom name="InfStatus">No;:;Non</atom>
+      </tuple>
+    </table>
+    <table name="InfComments0">
+      <tuple>
+        <atom name="InfComments">none</atom>
+      </tuple>
+    </table>
+    <table name="InfInspectionDate0">
+      <tuple>
+        <atom name="InfInspectionDate">1997-07-22</atom>
+      </tuple>
+    </table>
+    <table name="StaStable_tab">
+      <tuple>
+        <atom name="StaStable">Yes;:;Oui</atom>
+      </tuple>
+    </table>
+    <table name="StaInspectionDate0">
+      <tuple>
+        <atom name="StaInspectionDate">1997-07-22</atom>
+      </tuple>
+    </table>
+    <table name="StaComments0">
+      <tuple>
+        <atom name="StaComments">Deterioration Notes:  bamboo fishing rod is slightly curved with localized hairline cracks visible between bamboo joints - rod has a red and white plastic float (undamaged) attached to a line, lead weight (no visible corrosion on lead) and a fishing hook - some light iron corrosion products on steel hook</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 5 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1985.0286</atom>
+    <atom name="ObjObjectName">Rod, fishing;:;Canne &#224; p&#234;che</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConProvinceState">Ontario</atom>
+    <atom name="ArtConAreaNotes">BALACLAVA MILL, NEAR RENFREW, ONTARIO</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1985.0286.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1985.0286.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">
+
+From CA of 07/22/1997 by Gordon Perrault: No - Complete</atom>
+    <atom name="ArtDetFinish">BLACK CORD/ RED, WHITE, &amp; GREEN FLOAT</atom>
+    <atom name="NotNotes">PURCHASE LOT: 850286-0287/ CW. COLLECTION PTS/ CONDITION: UNUSED, SLIGHTLY SOILED</atom>
+    <atom name="ArtRefCollection">BALACLAVA</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1985.0215-.0351; 1985.0443-.0445; SP0534; SP0536; SP0573; SP1003</atom>
+    <atom name="ArtRefArticleNumber">6396-77</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">SEE 850215 S.I.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2380</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssAssessmentDate">1997-07-22</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOilCoolantEtc">none</atom>
+    <atom name="AssActionRequired">vacuum</atom>
+    <atom name="AssActionTaken">vacuumed</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <atom name="AssHazards">No</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">442.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">007.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">005.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">BAMBOO POLE/ SYNTHETIC CORD/ PLASTIC FLOAT</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">synthetic;:;synth&#233;tique</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">bamboo;:;bambou</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">plastic;:;plastique</atom>
+      </tuple>
+    </table>
+    <table name="InfStatus_tab">
+      <tuple>
+        <atom name="InfStatus">No;:;Non</atom>
+      </tuple>
+    </table>
+    <table name="InfComments0">
+      <tuple>
+        <atom name="InfComments">none</atom>
+      </tuple>
+    </table>
+    <table name="InfInspectionDate0">
+      <tuple>
+        <atom name="InfInspectionDate">1997-07-22</atom>
+      </tuple>
+    </table>
+    <table name="StaStable_tab">
+      <tuple>
+        <atom name="StaStable">Yes;:;Oui</atom>
+      </tuple>
+    </table>
+    <table name="StaInspectionDate0">
+      <tuple>
+        <atom name="StaInspectionDate">1997-07-22</atom>
+      </tuple>
+    </table>
+    <table name="StaComments0">
+      <tuple>
+        <atom name="StaComments">Deterioration Notes:  bamboo poles appear intact with minor cracks between joints, fishing line is tied and secured to pole - light iron corrosion products on steel fishing hook - plastic float appears intact - generally covered with accumulated dirt and grime over entire pole</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 6 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1968.0238</atom>
+    <atom name="ObjObjectName">Basket, fire;:;Brasier</atom>
+    <atom name="ObjObjectType">NIGHT FISHING</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1968.0238.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1968.0238.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="NotNotes">HALF OPEN CAGE OF WIRE (10 IN DIAM X 20 IN LONG)/ A 32 IN HANDLE IS ATTACHED TO THE CENTRE BRACE OF THE CAGE AND BENDS AT 90 DEGREES AT END OF CAGE</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefNumberRange">1968.0221-.0251; 1968.0936</atom>
+    <atom name="ArtRefArticleNumber">6381-01</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">025.4</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">058.4</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">109.7</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 7 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1968.0241</atom>
+    <atom name="ObjObjectName">Spear;:;Harpon</atom>
+    <atom name="ObjObjectType">FISHING</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1968.0241.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1968.0241.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="NotNotes">CRUDELY MADE IRON SPEARHEAD WITH 4 BARBED TINES/ THE TANG HAS A SINGLE LOCKING HOLE IN IT/ THE SPEARHEAD IS ABOUT 5 IN WIDE</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefNumberRange">1968.0221-.0251; 1968.0936</atom>
+    <atom name="ArtRefArticleNumber">6381-01</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">LOST</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">iron;:;fer</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 8 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1977.0381</atom>
+    <atom name="ObjObjectName">Line, jigging;:;Ligne de p&#234;che &#224; la turlutte</atom>
+    <table name="ObjModel_tab">
+      <tuple>
+        <atom name="ObjModel">HOME BUILT?</atom>
+      </tuple>
+    </table>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">FOR JIGGING FISH/ USED BY INSHORE FISHERMAN FOR COD, SQUID ETC.</atom>
+    <atom name="ArtConTechnical">EARLY &amp; PRIMATIVE METHOD OF CATCHING FISH STILL IN USE</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">ATLANTIC</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1977.0381.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1977.0381.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetFinish">UNFINISHED, DIRTY WOOD/ TAN COLOURED LINE</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefNumberRange">1977.0365-.0392; 1977.0503; 1977.0512-.0514; 1977.0737; 1977.0746-.0753; 1977.0774-.0783</atom>
+    <atom name="ArtRefArticleNumber">6404-15</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">033.1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">017.8</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">002.5</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">WOODEN FRAME/ FIBER ROPE/ METAL NAILS</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 9 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1982.0002</atom>
+    <atom name="ObjObjectName">Ball, float;:;Boule flotteur</atom>
+    <atom name="ObjObjectType">FISHING NET</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">ENSUNZA, M.</atom>
+      <atom name="NamOrganisationAcronym">ENSUNZA</atom>
+      <atom name="AddPhysCity">Erandio-Bilboa</atom>
+      <atom name="AddPhysCountry">Spain</atom>
+    </tuple>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1982.0002.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1982.0002.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">COMPLETE</atom>
+    <atom name="ArtDetFinish">PAINTED GREY</atom>
+    <atom name="ArtDetDecoration">WHAT IS BELIEVED TO BE THE MFR'S NAME &amp; LOCATION IS CAST, IN RAISED LETTERS ON THE TOP &amp; BOTTOM HALF OF THE BALL</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefArticleNumber">6381-121</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">Museum Documents in Supp. Info.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">025.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">029.5</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 10 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1979.0874</atom>
+    <atom name="ObjObjectName">Trap, lobster;:;Casier &#224; homard</atom>
+    <atom name="ObjObjectType">Lobster pot</atom>
+    <table name="ObjModel_tab">
+      <tuple>
+        <atom name="ObjModel">Home built</atom>
+      </tuple>
+    </table>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">Type of trap made in Canada and used in Canada for inshore lobster fishing.  Before the arrival of Europeans, the Micmac and Maleseet Amerindians of Atlantic Canada were fishing lobsters.  The fishermen from European origins were also fishing lobsters by spearing them but it was not then for commercial purposes.  Commercial fishing of lobsters began in the mid-19th century.</atom>
+    <atom name="ArtConFunction">To catch lobster in inshore fishing.</atom>
+    <atom name="ArtConTechnical">Before traps, fishermen were fishing lobsters for their personal use, by spearing or gaffing them.  Some of them were selling their catch and as lobsters without spearing marked had higher prices, they started to use wire cages.  These wire cages were adapted from Europeans who used them to catch crayfish and Spiny lobsters.  The original wooden lath trap is said to have originated in Cape Cod in 1810 and was later brought to Canada.
+
+Traps used to be made by the fishermen during the winter season.  Size and design of cages vary depending on localities but they were mainly constructed of curved pieces of wood, laths, and cotton or nylon twine.  Lobster traps for offshore fishing are made sturdier, larger and are constructed of a metal or heavy wooden frame covered with wire mesh.  
+
+The practice of lobster fishing also varies according to region.  In some, the traps are set in groups of ten and in others, they are set individually.  They are usually set near a rocky bottom preferred by lobsters and are ballasted with flat stones or concrete slabs to sink them.  They are marked with buoys to easily locate them.  This particular trap has a flat stone to keep the trap to the bottom and the net is made of twine.  We used to find this type of lobster trap along the coast of New England, Nova Scotia, New Brunswick, Newfoundland, Gasp&#233; Peninsula, north shore and the Magdalene Islands.
+
+Each "trap has one or more funnel-shaped openings fashioned from twine, which allow the lobster to enter the trap but prevent it from escaping. They are baited with either fresh or salted fish, commonly herring, mackerel or gaspereau."  The bait is situated in the middle of the cage, on a small pointed stick made of wood and about 10 inches long.  The last compartment after the second funnel-shaped passage is called the salon or prison. Only small lobsters can escape through small vents.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">East coast, Canada.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1979.0874.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1979.0874.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">Appears complete.</atom>
+    <atom name="ArtDetFinish">No finish; 'Weathered'</atom>
+    <atom name="NotNotes">Collected by Dr. Baird while on vacation/ Condition: Several slats must be repaired.</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefArticleNumber">see comm</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1) Fisheries and Oceans, Underwater World. Atlantic Fishing Methods, 1989, p. 6.</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">2) Marcel Moussette, Fishing Methods Used in the St. Lawrence River and Gulf, Parks Canada, no. 22, History and Archaeology, 1979.</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">3) The American Lobster: History of Lobster Fishing &amp; Processing, http://www.parl.ns.ca/lobster/history.htm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">4) Maritime Fisheries Museum, Lunenburg, Ralph Getson.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">092.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">065.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">043.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">Wood/ Cotton string/ Stone weight.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">stone;:;pierre</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">cotton;:;coton</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 11 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1970.0529</atom>
+    <atom name="ObjObjectName">Flenser, whale;:;D&#233;peceur de baleine</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Processing;:;Traitement</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">between;:;entre</atom>
+    <atom name="ObjManufactureDateFrom">1800</atom>
+    <atom name="ObjManufactureDateTo">1899</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">Whaling has been an important activity in Canada since at least the 15th century with the Basques coming in Canadian waters and establishing stations on the inland shores. With time, as the whales will become rarer on the coast, the hunting had to be done farther away up to Davis Strait, Baffin Bay and Hudson Bay. Whalemen were mainly British, Dutch, Danish, German and American. Canadians did not participate much but were affected by this activity, mostly the Inuit. With the declining demand for oil and baleen and the scarcity of whales, the traditional industry ended at the beginning of the 20th century.</atom>
+    <atom name="ArtConFunction">To cut whale blubber into pieces in order to melt it.</atom>
+    <atom name="ArtConTechnical">Traditional tool used to cut the whale blubber in order to later melt it.  The cutting operation was done either on the shore, or in the back of the ship and the pieces were hauled to the water's edge to be melted in large cauldrons or after 1760, or done while on sea, on a platform next to the ship and the blubber melted in cauldrons put on the deck.  
+
+The oil was used for lighting oil, candles, soap, lubricants, medicine, etc.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1970.0529.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1970.0529.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="NotNotes">Handle slides in holding ring./ 
+
+There is some deliberation as to what this artifact actually is... Some seem to believe that it is not a whaling tool at all, but in fact some type of agriculture-related tool or even a butcher's implement.  If it is indeed a whaling instrument, it is most likely a blubber cutting spade./ Artifact has been flagged for future research as instructed by Suzanne Beauvais, en lieu de Garth Wilson, in Dec. 2008, during the Collection Rationalization Project.  See CRP binder #2 for more info. (SC - Jan. 2008)</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1) Jean-Pierre Proulx, La p&#234;che de la baleine dans l'Atlantique Nord jusqu'au milieu du X1Xe si&#232;cle, Parcs Canada, 1986.</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">2) W. Gillies Ross, Arctic Whalers Icy Seas, 1985.</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">3) Website: http://www.civilisations.ca/cmc/exhibitions/hist/canp1/ca04fra.shtml</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">4) Website: www.heritage.nf.ca/exploration/basque</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">088.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">027.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">004.5</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">Hand carved wood handle/ Hand forged steel.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">steel;:;acier</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 12 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1981.1616</atom>
+    <atom name="ObjObjectName">Harpoon;:;Harpon</atom>
+    <atom name="ObjObjectType">WHALING</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1981.1616.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1981.1616.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetFinish">PAINTED RED</atom>
+    <atom name="NotNotes">90 MM.; 4 SPRING BARBS</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefArticleNumber">6420-03</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">182.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">020.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">FERROUS METAL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 13 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1997.0188</atom>
+    <atom name="ObjObjectName">Gauge, snow crab;:;Mesure de crabe des neiges</atom>
+    <atom name="ObjObjectType">VERIFIER</atom>
+    <table name="ObjModel_tab">
+      <tuple>
+        <atom name="ObjModel">2</atom>
+      </tuple>
+    </table>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Measuring;:;Mesure</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">after;:;apres</atom>
+    <atom name="ObjManufactureDateFrom">1952</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">MADE AND USED IN CANADA</atom>
+    <atom name="ArtConFunction">USED AS REFERENCE IN VERIFYING THE SIZE OF SNOW CRABS OR TO CHECK AGAINST OTHER COMMERCIAL SNOW CRAB GAUGES.</atom>
+    <atom name="ArtConTechnical">ONE OF THE MANY TYPES OF MEASUREMENTS REQUIRED BY THE STANDARDS BUREAU OF CANADA. THIS ITEM MADE ESPECIALLY FOR WEIGHTS AND MEASURES CANADA [SEE MARKINGS]</atom>
+    <atom name="ArtConPeriod">DURING THE REIGN OF ELIZABETH II</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">PROBABLY USED BY INSPECTORS IN THE MARITIME REGIONS OF CANADA</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1997.0188.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1997.0188.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetFinish">LACQUERED</atom>
+    <atom name="NotNotes">*MFR: MADE FOR WEIGHTS AND MEASUREMENT CANADA [SEE MARKINGS]/</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1997.0064-.0215; 1997.0220-.0265; 1997.0278; 1997.0467; SP1340; trade literature colln.</atom>
+    <atom name="ArtRefArticleNumber">6420-168</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1) SEE 970064 SUPP. INFO.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2421</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">010.7</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">009.4</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.2</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <atom name="SrcPreviousCstmcNos">MC0302</atom>
+  </tuple>
+  <!-- Row 14 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1995.0502</atom>
+    <atom name="ObjObjectName">Gauge, lobster;:;Calibre de homard</atom>
+    <atom name="ObjObjectType">LINEAR/STEEL</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Measuring;:;Mesure</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">circa;:;vers</atom>
+    <atom name="ObjManufactureDateFrom">1980</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">MCR, W. &amp; A.</atom>
+      <atom name="NamOrganisationAcronym">MCR</atom>
+    </tuple>
+    <atom name="ArtConCanada">LOBSTER FISHING IS AN IMPORTANT PRIMARY INDUSTRY IN MARITIME CANADA.</atom>
+    <atom name="ArtConFunction">USED TO MEASURE THE LENGTH OF THE SHELL OF THE BODY OF A LOBSTER</atom>
+    <atom name="ArtConTechnical">HAS 2 GAUGES: ONE FOR 2.5 IN. AND THE OTHER FOR 3 3/16 IN. THE SMALLER WAS FOR MEASURING THE MINIMUM SIZE OF CANNER LOBSTERS (ONES USED FOR SHELLING &amp; FREEZING IN CANS OR PLASTIC TUBS IN THE PROCESSING FACILITY). THE LARGER ONE FOR THE MINIMUM SIXE OF MARKET LOBSTERS WHICH WERE SOLD LIVE.</atom>
+    <atom name="ArtConPeriod">PROBABLY USED IN THE 1970S AND 1980S</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">CANADIAN "MARITIME" PROVINCES, PROBABLY NOVA SCOTIA</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1995.0502.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1995.0502.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetFinish">UNFINISHED</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1995.0500-.0524; 1995.1327-.1328; 1995.1521-.1522</atom>
+    <atom name="ArtRefArticleNumber">6420-131</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1) CURATOR'S ACQUSITION PROPOSAL IN SUPP.INFO.</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">2) SEE 950500 SUPP. INFO.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">010.1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">006.7</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.1</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">STAINLESS STEEL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">steel;:;acier</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 15 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0027</atom>
+    <atom name="ObjObjectName">Bat, halibut;:;Matraque &#224; poisson</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">MCKAY, DOUG</atom>
+      <atom name="NamOrganisationAcronym">MCKAY</atom>
+    </tuple>
+    <atom name="ArtConFunction">USED TO STUN AND KILL FISH CAUGHT IN NETS, ONCE THE NETS HAVE BEEN EMPTIED ONTO DECK.</atom>
+    <atom name="ArtConCountry">North America</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF FISH CLUB USED IN N. AMERICA; POSSIBLY USED WORLDWIDE. THIS EXAMPLE NEVER USED.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0027.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0027.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">NONE.</atom>
+    <atom name="ArtDetFinish">NATURAL FINISH.</atom>
+    <atom name="NotNotes">*SOURCE: VIA MS. MARY MANNING, PRESIDENT/ ORIGINALLY DONATED TO SHELBURNE HISTORICAL SOCIETY BY DOUG MCKAY/ BAT RESEMBLES AN OAR WITHOUT THE BLADE/ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2380</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">061.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">005.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">005.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">ALL WOOD CONSTRUCTION.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 16 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0019</atom>
+    <atom name="ObjObjectName">Protector, hand;:;Gant protecteur</atom>
+    <atom name="ObjObjectType">HAND OR PALM</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">004</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexGroup">Marine Transportation;:;Transports maritimes</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Barrington Woolen Mill</atom>
+      <atom name="NamOrganisationAcronym">Barrington</atom>
+      <atom name="AddPhysCity">Barrington</atom>
+      <atom name="AddPhysCountry">Canada</atom>
+      <atom name="AddPhysState">Nova Scotia</atom>
+    </tuple>
+    <atom name="ArtConFunction">TO PREVENT CUTS AND BURNS TO PALM AND FINGERS, FROM ROPE BEING PULLED ACCROSS HAND.</atom>
+    <atom name="ArtConTechnical">SIMPLE PROTECTIVE DEVICE, ALSO KNOWN AS "NIPPERS".</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF HAND PROTECTOR USED IN N. AMERICA; POSSIBLY WORLDWIDE.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0019.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0019.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">NONE.</atom>
+    <atom name="ArtDetFinish">.1-.2 RED RUBBER/.3-.4 GREY AND OFF-WHITE WOOL.</atom>
+    <atom name="NotNotes">NO. BREAKDOWN: .1-.2 PAIR OF RUBBER NIPPERS; .3-.4 PAIR OF KNITTED NIPPERS/ *SOURCE: VIA MS. MARY MANNING, PRESIDENT/ .1-.2 ORIGINALLY DONATED TO SHELBURNE HISTORICAL SOCIETY BY SAM SCOTT; .3-.4 ORIGINALLY DONATED TO SHELBURNE HISTORICAL SOCIETY BY BARRINGTON WOOLEN MILL MUSEUM./ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT SHELBURNE DORY 980009./ NB: .1-.2 CATALOGUE NUMBER NOT PERMANENTLY MARKED ON RUBBER, AS PER ADVICE OF S. WARREN,
+NMSTC CONSERVATION./ *MFR: .3-.4 PROBABLY BARRINGTON WOOLEN MILL</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-18, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">.1-.2 RED RUBBER/.3-.4 NATURAL WOOL</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">resin;:;r&#233;sine</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">rubber;:;caoutchouc</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">wool;:;laine</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 17 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0028</atom>
+    <atom name="ObjObjectName">Line, trawl;:;Palangre</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">USED AS ATTACHMENT POINT FOR OTHER LINES HAVING BAITED HOOKS.</atom>
+    <atom name="ArtConTechnical">EXAMPLE OF TRAWL LINE, A LINE SUPPORTED BY BUOYS AND HAVING ATTACHED TO IT MANY SHORT LINES WITH BAITED HOOKS.</atom>
+    <atom name="ArtConCountry">Worldwide</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF LINE USED WORLDWIDE.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0028.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0028.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">NONE.</atom>
+    <atom name="ArtDetFinish">NATURAL FINISH.</atom>
+    <atom name="NotNotes">*SOURCE: VIA MS. MARY MANNING, PRESIDENT/ PART OF A COLLECTION OF MARITIME ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2380</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">Yes;:;Oui</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">FIBRE LINE.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 18 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0015</atom>
+    <atom name="ObjObjectName">Gaff, fish;:;Gaffe &#224; poisson</atom>
+    <table name="ObjModel_tab">
+      <tuple>
+        <atom name="ObjModel">HOME BUILT</atom>
+      </tuple>
+    </table>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">USED TO ASSIST IN PULLING IN OR RETRIEVING FISH, ROPES OR LINES, NETS, ETC.</atom>
+    <atom name="ArtConTechnical">EXAMPLE OF SIMPLE GAFF, DESIGNED TO ASSIST IN THE MOVEMENT OF FISH INTO AND ABOARD A BOAT.</atom>
+    <atom name="ArtConCountry">Worldwide</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF ITEM USED WORLDWIDE.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0015.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0015.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">NONE.</atom>
+    <atom name="ArtDetFinish">NATURAL FINISH.</atom>
+    <atom name="NotNotes">*SOURCE: VIA MS. MARY MANNING, PRESIDENT/ ORIGINALLY DONATED TO THE SHELBURNE HISTORICAL SOCIETY BY THE ESTATE OF HERMAN LOCKE/ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-01-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2380</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">000.0</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL HOOK SECURED TO WOODEN SHAFT WITH ROPE.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 19 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0021</atom>
+    <atom name="ObjObjectName">Knife;:;Couteau</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexGroup">Marine Transportation;:;Transports maritimes</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">USED TO CUT THROUGH ROPE, FISHING LINE, ETC.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF KNIFE USED IN N. AMERICA, AND PROBABLY ELSEWHERE.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0021.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0021.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">NONE.</atom>
+    <atom name="ArtDetFinish">PRESUMABLY NATURAL FINISH OBSCURED BY HEAVY CORROSION.</atom>
+    <atom name="CstmcNotExhibit">1998.0021
+
+Skate Knife
+A skate knife takes its name from the actual fish. Skate would often take the bait intended by fishermen for the more highly-valued cod or haddock. Rather than remove the hook, the fisherman would use a knife like this to simply cut the skate clear.
+
+CSTM Artifact no. 1998.0021
+
+
+Le couteau &#224; raie
+Le couteau porte le nom du poisson lui-m&#234;me. En effet, la raie s'attaquait souvent aux app&#226;ts que les p&#234;cheurs destinaient &#224; des poissons ayant une plus forte valeur commerciale, comme la morue ou l'&#233;glefin. Plut&#244;t que de se d&#233;barrasser de l'hame&#231;on, les p&#234;cheurs utilisaient ce couteau pour simplement en retirer la raie.
+
+No d'artefact : MSTC 1998.0021</atom>
+    <atom name="NotNotes">*SOURCE: VIA MS. MARY MANNING, PRESIDENT/ ORIGINALLY DONATED TO THE SHELBURNE HISTORICAL SOCIETY BY BILL RAPP./ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009.</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. SEE ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">020.3</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">004.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">002.3</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL BLADE &amp; FITTINGS; WOODEN HANDLE</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 20 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0016</atom>
+    <atom name="ObjObjectName">Handline;:;Palangre ligne dormante</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">USED BY DORYMEN TO FISH FOR BAIT WHICH WILL USED ON THE TRAWL LINES.</atom>
+    <atom name="ArtConCountry">North America</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF HANDLINE USED IN N. AMERICA; POSSIBLY ELSEWHERE.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0016.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0016.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">APPEARS COMPLETE.</atom>
+    <atom name="ArtDetFinish">NATURAL FINISH.</atom>
+    <atom name="CstmcNotExhibit">1998.0016
+
+Hand Line
+This was fishing line for catching bait.
+
+CSTM Artifact no. 1998.0016
+
+
+La ligne &#224; main
+Ligne de p&#234;che utilis&#233;e pour capturer les app&#226;ts.
+
+No d'artefact : MSTC 1998.0016</atom>
+    <atom name="NotNotes">*SOURCE: VIA MS. MARY MANNING, PRESIDENT/ ORIGINALLY DONATED TO THE SHELBURNE HISTORICAL SOCIETY BY CURTIS MAHANEY. ORIGINALLY OWNED BY SIDNEY MAHANEY./ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. G.S. WILSON, CURATOR- MARINE TECHNOLOGY</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">2. SEE ACQUISITON PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">035.6</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">018.9</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">010.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL HOOK AND LEAD WEIGHTS SECURED TO WOVEN FIBRE ROPE; WOODEN WINDER.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">lead;:;plomb</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 21 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0024</atom>
+    <atom name="ObjObjectName">Tub &amp; net, trawl;:;Bac et filet de fond</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">002</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">TRAWL NET SUSPENDED BELOW SMALL BOAT, AND USED TO CATCH FISH. BARREL PROVIDES CONVENIENT MEANS OF STORING &amp; TRANSPORTING NET.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF NET USED IN CANADA &amp; USA; POSSIBLY USED WORLDWIDE.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0024.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0024.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">APPEARS COMPLETE.</atom>
+    <atom name="ArtDetFinish">.1 TUB PAINTED ORANGE.</atom>
+    <atom name="CstmcNotExhibit">1998.0024
+
+Trawl Tub and Trawl
+Dories carried up to three tubs of trawl, each holding coiled rope. Short ropes with large hooks were spliced to this line, 25 to 30 cm apart. The hooks were baited with herring or mackerel.
+
+CSTM Artifact no. 1998.0024
+
+
+Le bac et les lignes de p&#234;che
+Les doris emportaient jusqu'&#224; trois bacs, contenant chacun une ligne de p&#234;che enroul&#233;e en spirale. De courts fils dot&#233;s de grands hame&#231;ons &#233;taient mont&#233;s tous les 25 ou 30 cm sur cette ligne. Les hame&#231;ons &#233;taient piqu&#233;s de harengs ou de maquereaux qui servaient d'app&#226;ts.
+
+No d'artefact : MSTC 1998.0024</atom>
+    <atom name="NotNotes">NO. BREAKDOWN: .1 TUB; .2 TRAWL NET/ *SOURCE: VIA MS. MARY MANNING, PRESIDENT/ ORIGINALLY DONATED TO SHELBURNE HISTORICAL SOCIETY BY DONNIE WAYNE MAHANEY. ORIGINALLY OWNED BY DONALD MAHANEY, SR./ *DIM: GIVEN REFER TO .1 TUB/ CATALOGUE NO. NOT PERMANENTLY APPLIED TO .2 NET/ NB: HOOK STRAIGHTENER 980025 IS ATTACHED TO TUB./ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009.</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">062.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">062.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">061.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">.1 WOODEN TUB HAS METAL HOOPS;.2 FIBRE NET</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 22 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1998.0025</atom>
+    <atom name="ObjObjectName">Straightener, hook;:;Redresseur &#224; hame&#231;on</atom>
+    <table name="ObjModel_tab">
+      <tuple>
+        <atom name="ObjModel">HOME BUILT</atom>
+      </tuple>
+    </table>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">001</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">TO RESHAPE BENT OR DAMAGED FISH HOOKS, GAFFS, ETC.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">THIS TYPE OF DEVICE USED WORLDWIDE; THIS DESIGN MAY BE SPECIFIC TO ATLANTIC CANADA.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0025.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1998.0025.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">APPEARS COMPLETE</atom>
+    <atom name="NotNotes">*SOURCE: VIA MS. MARY MANNING, PRESIDENT/ ORIGINALLY DONATED TO SHELBURNE HISTORICAL SOCIETY BY BILL RAPP/ NB: STRAIGHTENER IS ATTACHED TO TRAWL TUB 980024./ PART OF A COLLECTION OF MARINE ARTIFACTS ACQUIRED TO COMPLEMENT THE SHELBURNE DORY 980009.</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefNumberRange">1998.0009-1998.0028</atom>
+    <atom name="ArtRefArticleNumber">6389-61</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Black &amp; white negative;:;N&#233;gatif noir et blanc</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. ACQUISITION PROPOSAL PREPARED BY G.S. WILSON 1998-02-16, IN SUPP. INFO. FILE 980009.</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">003.7</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">003.7</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">008.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">METAL NAILS AND/OR POSTS DRIVEN INTO WOODEN BLOCK FORM STRAIGHTENER.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">wood;:;bois</atom>
+      </tuple>
+    </table>
+  </tuple>
+  <!-- Row 23 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1972.1371</atom>
+    <atom name="ObjObjectName">Net section;:;Section de  filet de p&#234;che</atom>
+    <atom name="ObjObjectType">TRAWL/CENTRE</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">003</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">before;:;avant</atom>
+    <atom name="ObjManufactureDateFrom">1972</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConTechnical">One section of 4-piece trawl net.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1972.1371.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1972.1371.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">Unknown.</atom>
+    <atom name="ArtDetFinish">Orange synthetic (probably polypropylene).</atom>
+    <atom name="NotNotes">* Dimensions: approximate, for folded net/ Weight: approx. 1000 lbs/ NB: net is incomplete: one section disposed of 2001 (as per G.S. Wilson)/ Formerly T00504: 1972 accession date based on shipping tag tied to net [removed, for storage in Supp. Info.}</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2421</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">1100.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">115.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">21.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">synthetic fibre (probably polypropylene)</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">synthetic;:;synth&#233;tique</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">polypropylene - possible;:;polypropyl&#232;ne - possible</atom>
+      </tuple>
+    </table>
+    <atom name="ConConditionStatus">Good;:;Bonne</atom>
+    <atom name="ConDateChecked">2006-06-26</atom>
+    <atom name="CstmcAdmAcquisitionProposal">No</atom>
+    <atom name="SrcPreviousCstmcNos">T00505.3</atom>
+  </tuple>
+  <!-- Row 24 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">2010.0417</atom>
+    <atom name="ObjObjectName">Medal;:;M&#233;daille</atom>
+    <atom name="ObjObjectType">award</atom>
+    <table name="ObjModel_tab">
+      <tuple>
+        <atom name="ObjModel">Insignia of The Order of Canada, degree of Officer</atom>
+      </tuple>
+    </table>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">003</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">circa;:;vers</atom>
+    <atom name="ObjManufactureDateFrom">2005</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">Order of Canada was established in1967 by Her Majesty Queen Elizabeth 11, the Order of Canada is the Centrepiece of Canada's honours system and recognizes a lifetime of outstanding achievement, dedication to the community and service to the nation.to In 2006, Prof. Parsons was appointed as an Officer to the Order of Canada for his great contribution to the development of Biological Oceanography and to the well being of fisheries within ecosystems, contribution that have had and will have global consequences for years to come,</atom>
+    <atom name="ArtConFunction">Award for outstanding achievement and servce.</atom>
+    <atom name="ArtConTechnical">"His lifetime work has been to establish a new ecosystem approach for the management of fisheries using oceanographic information." Prof. Parsons has received many honours in the course of his professional career, most notably the Japan Prize, 2001(the only Canadian ever to receive this very high honour). The citation (pr&#233;cis) for this prestigious award read as follow: Through his research devoted to obtaining a holistic understanding of how pelagic organisms are interconnected in the trophodynamic food-web of the sea, he has made a great contribution to the development of Biological Oceanography. His goal has been to present an alternative method for the management of fisheries, based on measuring the dynamic relationship between fish and their physical, chemical and bilogical environments.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">Brentwood, British Columbia; Prof. Parsons taught oceanography at the University of British Columbia.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/2010.0417.001.aa.cs.JPG</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/2010.0417.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">Complete.</atom>
+    <atom name="ArtDetFinish">White enamelled, gold plated, sterling silver medal/circular red band and maple leaf/red and gold crown with white dots/metallic pin/ red and white striped ribbon with metal hook and eyes.</atom>
+    <atom name="ArtDetDecoration">Red maple leaf and multicoloured crown on front of medal.</atom>
+    <atom name="NotNotes">No. Breakdown: .1 medal, .2 case, .3 insert.
+
+Note: measurement taken includes the ribbon.
+
+Supp. Info.: CD -Parsons Medals, CD-T. R. Parsons Awards Final 08/10/2010</atom>
+    <atom name="ArtRefWorksheet">Yes;:;Oui</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefExternalDoc">Yes;:;Oui</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">Acquistion proposal Ref.#1</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssAssessmentDate">2013-09-24</atom>
+    <atom name="AssConditionReport">Yes;:;Oui</atom>
+    <atom name="AssOilCoolantEtc">no</atom>
+    <atom name="AssHazards">no</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">32.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">5.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">03.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">White enamelled medal with gold gilded edges/circular red band and maple leaf/red and gold crown with white dots/metallic pin/ red and white striped ribbon with metal hook and eyes.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+    </table>
+    <atom name="CstmcAdmAcquisitionProposal">yes</atom>
+    <table name="InfStatus_tab">
+      <tuple>
+        <atom name="InfStatus">No;:;Non</atom>
+      </tuple>
+    </table>
+    <table name="InfInspectionDate0">
+      <tuple>
+        <atom name="InfInspectionDate">2013-09-24</atom>
+      </tuple>
+    </table>
+    <table name="StaStable_tab">
+      <tuple>
+        <atom name="StaStable">Yes;:;Oui</atom>
+      </tuple>
+    </table>
+    <table name="StaInspectionDate0">
+      <tuple>
+        <atom name="StaInspectionDate">2013-09-24</atom>
+      </tuple>
+    </table>
+    <atom name="SrcCulturalProperty">yes;:;oui</atom>
+  </tuple>
+  <!-- Row 25 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">2010.0417</atom>
+    <atom name="ObjObjectName">Case, medal;:;&#201;tui &#224; m&#233;dailles</atom>
+    <atom name="ObjPartNo">002</atom>
+    <atom name="ObjPartNoSum">003</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">circa;:;vers</atom>
+    <atom name="ObjManufactureDateFrom">2005</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">The case for the Insignia of The Order of Canada, degree of Officer.</atom>
+    <atom name="ArtConFunction">To contain, protect, display and store medal.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">British Columbia where Prof. Parsons taught oceanography at the University of British Columbia.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/2010.0417.002.aa.cs.JPG</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/2010.0417.002.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">Complete.</atom>
+    <atom name="ArtDetFinish">A navy possible leather exterior with a white silk linning and a white silk padded linning on the left interior side with metal hinges on the spine of the case.</atom>
+    <atom name="ArtDetDecoration">Govenor General's emblem in gold on the front of the case</atom>
+    <atom name="NotNotes">No. Breakdown: .1 medal, .2 case, .3 insert.</atom>
+    <atom name="ArtRefWorksheet">Yes;:;Oui</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefExternalDoc">Yes;:;Oui</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">Acquistion proposal Ref.#1</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">15.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">10.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">2.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">A navy possible leather exterior with a white silk linning and a white silk padded linning on the left interior side with metal hinges on the spine of the case.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">skin;:;peau</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">leather - possible;:;cuir - possible</atom>
+      </tuple>
+    </table>
+    <atom name="CstmcAdmAcquisitionProposal">yes</atom>
+  </tuple>
+  <!-- Row 26 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">2010.0417</atom>
+    <atom name="ObjObjectName">Insert, box;:;Encart de bo&#238;te</atom>
+    <atom name="ObjObjectType">rigid</atom>
+    <atom name="ObjPartNo">003</atom>
+    <atom name="ObjPartNoSum">003</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Miscellaneous;:;Divers</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">circa;:;vers</atom>
+    <atom name="ObjManufactureDateFrom">2005</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConCanada">For the Insignia of The Order of Canada, degree of Officer.</atom>
+    <atom name="ArtConFunction">To contain, protect, display and store medal.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">British Columbia where Prof. Parsons taught oceanography at the University of British Columbia.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/2010.0417.003.aa.cs.JPG</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/2010.0417.003.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">Complete.</atom>
+    <atom name="ArtDetFinish">A rigid cardboard backing/the front is covered  velour (navy)/ with a cut where the medal sits and a silk tab on the left side of the insert.</atom>
+    <atom name="ArtDetDecoration">None</atom>
+    <atom name="NotNotes">No. Breakdown: .1 medal, .2 case, .3 insert.</atom>
+    <atom name="ArtRefWorksheet">Yes;:;Oui</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <atom name="ArtRefExternalDoc">Yes;:;Oui</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">Acquistion proposal Ref.#1</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2475</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">14.5</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">9.4</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">01.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">A rigid cardboard backing/the front is covered  velour (navy)/ with a cut where the medal sits and a silk tab on the left side of the insert.</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">paper;:;papier</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">cardboard;:;carton</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">velvet - possible;:;velours - possible</atom>
+      </tuple>
+    </table>
+    <atom name="CstmcAdmAcquisitionProposal">yes</atom>
+  </tuple>
+  <!-- Row 27 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1966.0984</atom>
+    <atom name="ObjObjectName">Net;:;Filet</atom>
+    <atom name="ObjObjectType">TRAWL</atom>
+    <atom name="ObjSerialNumber">10267</atom>
+    <atom name="ObjObjectAKA">otter or bottom trawl</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">003</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Phillips Trawl Products Ltd.</atom>
+      <atom name="NamOrganisationAcronym">Phillips</atom>
+      <atom name="AddPhysCity">Grimsby</atom>
+      <atom name="AddPhysCountry">England</atom>
+    </tuple>
+    <atom name="ArtConCanada">Type of trawl net used in Canada for fishing groundfish species such as cod, haddock, redfish, turbot, yellowtail, etc.. Otter or bottom trawl nets have dominated the total groundfish catches from the Northwest Atlantic since the arrival of the distant waterfleets in the 1960s, and have been the major component of Canadian groundfish landings for almost as long. (Ref. 1)
+Paper tags fixed to net suggests associations with some of the oldest and best-known rope and net making firms, including Gourock (founded in Gourock, Scotland in 1736); Gourock-Bridport Ltd. (Montreal, PQ  (1903-c. late 1960s; sail loft established in Halifax, NS 1941-45); and Gundry Ltd. (established in Ireland in 18th c.). All tags issued by Gourock-Bridport- Gundry Ltd.: both Moncton, NB and Halifax, NS locations quoted. Specifics of provenance of this trawl net is unknown.</atom>
+    <atom name="ArtConFunction">To harvest groundfish species when towed by a boat along the ocean bottom.</atom>
+    <atom name="ArtConTechnical">Aluminium floats like those on this net ceased to be used in the late 1980s. Previously, floats were made of cork or more commonly glass. Inexpensive to mass produce, glass floats allowed the mouth of the trawl net to float higher, as glass is resistant  to pressure. Netting was made of natural fibres such as hemp. The use of synthetic fibres for the making of fishing nets had a significant impact on the fishing industry, in that it stimulated a renaissance in gillnetting techniques after WWII.
+Modern trawl nets used in the Maritimes have changed very little in design except that the mesh size has increased so that smaller fish are not trapped within the netting. (Ref. 1)
+Colour variation is netting used to distinguish different types of netting; allow users to track position of nets as they were loaded/laid; and identify problem areas requiring mending, replacement, etc. (Ref. 7)</atom>
+    <atom name="ArtConPeriod">Probably used c. 1940s- late 1960s.</atom>
+    <atom name="ArtConCountry">Canada</atom>
+    <atom name="ArtConAreaNotes">Presumably used in maritime waters off Canada's east coast.</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1966.0984.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1966.0984.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetMissing">Unknown.</atom>
+    <atom name="ArtDetFinish">Orange, red, and yellow synthetic fibre (polypropylene ?) netting; natural fibre (hemp ?) and metal fittings and cable; spherical, hollow aluminium alloy floats.</atom>
+    <atom name="NotNotes">* Mfr: of floats only; mfr. of net is unknown./ NB: Trawl net is rolled and tied at regular intervals as it would be when placed on ship, prepared for launch. Two paper tags remain tied to net: three additional tags found loose in crate now stored in Supp. Info. file.  Please do not remove ties, tags  or otherwise change net configuration./ * Dimensions: all dimensions are approximate, for rolled net. Length- 70 feet; width- 3.5 feet; height- 1.5 feet./ * Serial No.: probably more correctly the registration or identification number of net.</atom>
+    <atom name="ArtRefSuppInfo">Yes;:;Oui</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <table name="ArtRefReferences_tab">
+      <tuple>
+        <atom name="ArtRefReferences">1. Curatorial worksheet prepared by S.J. Beauvais, in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">2. Correspondence: A. Duthrie, Canada. Fisheries &amp; Oceans and G.S. Wilson , CSTM May 10, 2000- in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">3. "Report on Gear Technology in Eastern Canada" [1977] http://www.ncr.dfo.ca/frcc/gear/gear97.htm.- see 26 pp. hardcopy in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">4. "About us: Gourock" http://gourock.com/about.html [2006.06.15]- see 1 p. hardcopy in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">5. "Records of Gourock-Bridport Ltd., rope makers and textile manufacturers, Montreal, Canada" http://www.archives.gla.ac.uk/collects/catalog/ugd/001-050/ugd042-6-4.html [2006.06.15]- see 4 pp. hardcopy in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">6. "Swan Net-Gundry Ltd." http://www.swannetgundry.com/home.htm [2006.06.15]- 1 p. hardcopy in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">7. Carey, C. "The many nets of Hampidjan"  Seafood New Zealand .Oct. 2004  pp. 19-25. See hardcopy in Supp. Info. file 1966.0984</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtRefReferences">8. "Belly Lines" Chapter 2 of 'Introd</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">2421</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">2134.0</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">91.4</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">46.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">synthetic &amp; natural fibres; metal (including aluminium and steel)</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">synthetic;:;synth&#233;tique</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">fibre;:;fibre</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">polypropylene - possible;:;polypropyl&#232;ne - possible</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">aluminum;:;aluminium</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">hemp - possible;:;chanvre - possible</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">steel;:;acier</atom>
+      </tuple>
+    </table>
+    <atom name="ConConditionStatus">Good;:;Bonne</atom>
+    <atom name="ConDateChecked">2006-06-15</atom>
+    <atom name="CstmcAdmAcquisitionProposal">No</atom>
+    <atom name="SrcPreviousCstmcNos">T00022; T00504</atom>
+  </tuple>
+  <!-- Row 28 -->
+  <tuple>
+    <atom name="ObjObjectDiscipline">Artifact;:;Artefact</atom>
+    <atom name="ObjCatalogueNumber">1992.1184</atom>
+    <atom name="ObjObjectName">Hook, fish;:;Croc</atom>
+    <atom name="ObjPartNo">001</atom>
+    <atom name="ObjPartNoSum">006</atom>
+    <table name="ArtLexRank_tab">
+      <tuple>
+        <atom name="ArtLexRank">1</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">2</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexRank">3</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexGroup_tab">
+      <tuple>
+        <atom name="ArtLexGroup">Fisheries;:;Service des p&#234;ches</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexGroup">Aviation;:;Aviation</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexCategory_tab">
+      <tuple>
+        <atom name="ArtLexCategory">Tools &amp; equipment;:;Outils et &#233;quipement</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtLexCategory">Personal gear;:;Outillage personnel</atom>
+      </tuple>
+    </table>
+    <table name="ArtLexSubCategory_tab">
+      <tuple>
+        <atom name="ArtLexSubCategory">Harvesting;:;R&#233;colte</atom>
+      </tuple>
+    </table>
+    <atom name="ObjManufactureDate">circa;:;vers</atom>
+    <atom name="ObjManufactureDateFrom">1940</atom>
+    <tuple name="ObjManufacturerRef">
+      <atom name="NamOrganisation">Unknown;:;Inconnu</atom>
+      <atom name="NamOrganisationAcronym">Unknown</atom>
+      <atom name="AddPhysCountry">Unknown</atom>
+    </tuple>
+    <atom name="ArtConFunction">CONTAINER FOR FISHING HOOKS. PART OF MARK III JUNGLE KIT</atom>
+    <atom name="ArtConPeriod">1940S</atom>
+    <table name="ArtCompWandDMeasurement_tab">
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Length;:;longueur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Width;:;largeur</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDMeasurement">Height;:;hauteur</atom>
+      </tuple>
+    </table>
+    <table name="MulMultiMediaRef_tab">
+      <tuple>
+        <table name="DocIdentifier_tab">
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1992.1184.001.aa.cs.jpg</atom>
+          </tuple>
+          <tuple>
+            <atom name="DocIdentifier">http://source.techno-science.ca/images/1992.1184.001.aa.cs.thumb.jpg</atom>
+          </tuple>
+        </table>
+      </tuple>
+    </table>
+    <atom name="ArtDetFinish">ALL PARTS UNFINISHED</atom>
+    <atom name="NotNotes">NO. BREAKDOWN: .1-.6 FISHING HOOKS; 4 LARGE, 2 SMALL</atom>
+    <atom name="ArtRefSuppInfo">No;:;Non</atom>
+    <atom name="ArtRefNumberRange">1992.1169-1992.1196</atom>
+    <atom name="ArtRefArticleNumber">6411-418/6386-616</atom>
+    <table name="ArtRefImage_tab">
+      <tuple>
+        <atom name="ArtRefImage">Digital image;:;Image digital</atom>
+      </tuple>
+    </table>
+    <tuple name="LocCurrentLocationRef">
+      <atom name="LocLevel1">AV 194</atom>
+    </tuple>
+    <atom name="LocIndependentlyMoveable">Yes;:;Oui</atom>
+    <atom name="AssConditionReport">No;:;Non</atom>
+    <atom name="AssOperable">No;:;Non</atom>
+    <atom name="AssRestored">No;:;Non</atom>
+    <table name="ArtCompWandDValue_tab">
+      <tuple>
+        <atom name="ArtCompWandDValue">007.8</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">002.7</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDValue">002.0</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompWandDUnit_tab">
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompWandDUnit">cm</atom>
+      </tuple>
+    </table>
+    <atom name="ArtCompGeneralDescription">TIN CASE, STEEL HOOKS</atom>
+    <table name="ArtCompMaterialCHINGeneral_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINGeneral">metal;:;m&#233;tal</atom>
+      </tuple>
+    </table>
+    <table name="ArtCompMaterialCHINSpecific_tab">
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">tin;:;fer blanc</atom>
+      </tuple>
+      <tuple>
+        <atom name="ArtCompMaterialCHINSpecific">steel;:;acier</atom>
+      </tuple>
+    </table>
+  </tuple>
+</table>

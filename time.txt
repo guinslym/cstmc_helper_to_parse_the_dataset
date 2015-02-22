@@ -121,3 +121,9 @@ Downloading : agriculture-agriculture.xml
 4230/9602
 Time took to download
 all the dataset => 0:28:59.197740
+total of 64,846 artifacts
+
+http://techno-science.ca/en/open-data/tips-using-artifact-open-data-set.php
+https://devcenter.heroku.com/articles/heroku-command
+https://mongolab.com/home
+https://devcenter.heroku.com/articles/mongolab

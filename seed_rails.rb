@@ -1,5 +1,6 @@
 require 'json'
 require 'yaml'
+require 'ostruct'
 
 
 
@@ -25,7 +26,10 @@ def populate_array(data, language)
   data.each {|n| cummulator.push(n[language])}
   return cummulator
 end
+###############
 
+
+################
 def parse_the_json_file_to_db(json_file_name)
   file = File.read("db/artefact_seed/"+json_file_name)
   data_hash = JSON.parse(file)
@@ -49,10 +53,11 @@ artifact_composition_general_fr: populate_array(data['artefacts_composition_gene
 artifact_composition_specific_en: populate_array(data['artefacts_composition_specific'], 'en'),
 artifact_composition_specific_fr: populate_array(data['artefacts_composition_specific'], 'fr'),
 artifact_date: data['assigned_date'],
-objname_en: data['objname']['en'],
-objname_fr: data['objname']['fr'],
+objname_en: (data['objname']['en']).empty ? 'Unidentified artifact' : (data['objname']['en']),
+objname_fr: (data['objname']['fr']).empty ? 'Artefact non identifié' : (data['objname']['fr']) ,
 artifact_references: data['artefact_references'],
-art_dataset_name: data['dataset_name']
+art_dataset_name: data['dataset_name'],
+art_location: data['art_location']
      )
     puts artifact
     #Create it in the db
@@ -64,7 +69,7 @@ files.first(2).each {|f| parse_the_json_file_to_db(f) }
 
 =begin 
 #field to create in rails
-rails g scaffold artifact art_dataset_name discipline_en discipline_fr catalogue_number image_original image_thumbnail artifact_group_en artifact_group_fr artifact_category_en artifact_category_fr artifact_sub_category_en artifact_sub_category_fr artifact_composition_general_en artifact_composition_general_fr artifact_composition_specific_en artifact_composition_specific_fr artifact_date objname_en objname_fr artifact_references
+rails g scaffold artifact height:integer width:integer art_dataset_name art_location discipline_en discipline_fr catalogue_number image_original image_thumbnail artifact_group_en artifact_group_fr artifact_category_en artifact_category_fr artifact_sub_category_en artifact_sub_category_fr artifact_composition_general_en artifact_composition_general_fr artifact_composition_specific_en artifact_composition_specific_fr artifact_date objname_en objname_fr artifact_references
 =end
 
 #I need to create a mongodb rails app
