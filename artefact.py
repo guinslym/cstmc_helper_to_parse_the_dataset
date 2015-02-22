@@ -368,7 +368,7 @@ def main():
     number_of_dataset_to_download = len(artefacts_dataset)
     for dataset_name in artefacts_dataset:
         print("\t---Dataset {0}/{1}--".format((artefacts_dataset.index(dataset_name)+1), number_of_dataset_to_download))
-        #wget_this_dataset(dataset_name)
+        wget_this_dataset(dataset_name)
         print("\t---Parsing this dataset...")
         artefacts = xml_clean_the_dataset_for_rails(dataset_name)
         write_a_json_file_for_the_database(artefacts, dataset_name)
