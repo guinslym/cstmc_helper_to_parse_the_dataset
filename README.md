@@ -9,7 +9,7 @@ These are the files that I use to help me parse the CSMTC datasets
 	python2 artefact.py
 
 ####artefact.py
-Artefact.py will download all the xml file, than it will parse it to create a .json file.
+Artefact.py will download all the xml file, than it will parse it to create a .json file. Please refer to the **docstring**
 
 	Dependency:
 	pip install wget
